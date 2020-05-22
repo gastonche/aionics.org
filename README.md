@@ -34,7 +34,7 @@ Your Pages site will use the layout and styles from the Jekyll theme you have se
 
 ### Things You Can't Say in Class
 
-REDACTED 🧹
+REDACTED 🧹🧹
 
 ### Support or Contact
 
