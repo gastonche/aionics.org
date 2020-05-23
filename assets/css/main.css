@@ -1,6 +1,19 @@
 @import './navbar.css';
 @import './footer.css';
+@import './hero.css';
 
+:root {
+    --aionics-blue: ;
+    --aionics-gray: #e4e4e4
+    --aionics-light-gray:#f3f3f3 ;
+    
+}
+html {
+    font-size: 100%;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    font-family: Roboto, sans-serif;
+}
 * {
     box-sizing: border-box;
     padding: 0;
