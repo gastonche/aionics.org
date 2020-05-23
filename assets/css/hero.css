@@ -1,11 +1,11 @@
 #hero {
-	background-image: url(../img/AIONICS_favicon.png);
+	background-image: url(../img/AIONICS_fav.png);
 	background-color: rgba(2, 156, 191, 0.03);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	padding: 15px;
-	background-size: 15%;
+	background-size: 20%;
 }
 
 .hero-content {
@@ -19,6 +19,6 @@
     padding: 20px;
 }
 .particles-js-canvas-el {
-	max-height: 62vh;
+	max-height: 60vh;
 	object-fit: cover;
 }
