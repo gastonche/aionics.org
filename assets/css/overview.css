@@ -1,0 +1,22 @@
+.no-style {
+    margin: 0;
+    padding: 0;
+}
+.aionics-cards {
+    display: flex;
+    justify-content: space-between;
+}
+.aionic-card {
+	color: #9feaf9;
+	background-color: #2b2e3b;
+	border-color: #111218;
+    border-radius: 5px;
+    width: 32.5%;
+    padding: 30px 35px;
+}
+.aionic-card li {
+    line-height: 1.5;
+}
+/* .aionic-card:hover {
+    transform: scale(1.1);
+} */
