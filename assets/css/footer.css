@@ -1,0 +1,40 @@
+/* FOOTER STYLES */
+
+#footer {
+    position: absolute;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0;
+}
+
+.footer-content a {
+    color: var(--gv-blue);
+}
+
+.f-links a {
+    padding: 0 0 0 10px;
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+}
+.social-links i {
+    font-size: 25px;
+    color: var(--gv-blue);
+    border: none;
+    width: auto;
+    height: auto;
+    line-height: 1;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+.social-links i:hover {
+    color: red;
+}
