@@ -1,0 +1,34 @@
+#accelerated_rd {
+	background-color: #fbfafa;
+}
+.content-box img{
+    width: 100%;
+}
+.main-graphics {
+	display: flex;
+	justify-content: space-between;
+}
+.main-graphics .graph{
+    width: 48.5%;
+}
+figcaption {
+	text-align: center;
+	font-weight: 300;
+	color: #159393;
+}
+.screenshots {
+	display: flex;
+    justify-content: space-between;
+    padding: 50px 0 0 0;
+}
+.screenshots .screenshot {
+    width: 49.2%;
+
+}
+.screenshots .screenshot figure{
+    margin-bottom: 10px;
+}
+.screenshots .screenshot img{
+    width: 100%;
+    object-fit: contain;
+}

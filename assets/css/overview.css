@@ -1,22 +1,32 @@
-.no-style {
-    margin: 0;
-    padding: 0;
-}
 .aionics-cards {
     display: flex;
     justify-content: space-between;
 }
+.aionic-card:nth-child(2) {
+	/* width: 20%; */
+    padding: 25px;
+    background-color: #159393;
+}
 .aionic-card {
-	color: #9feaf9;
-	background-color: #2b2e3b;
-	border-color: #111218;
-    border-radius: 5px;
-    width: 32.5%;
-    padding: 30px 35px;
+	color: #fff;
+	background-color: var(--aionics-blue);
+	border-color: var(--aionics-gray);
+    border-radius: 3px;
+    width: 33.1%;
+    padding: 25px;
+}
+.aionic-card h3 {
+	font-size: 20px;
+	line-height: 2.2;
+}
+.aionic-card ul {
+	list-style: disclosure-closed;
+	padding:0 18px;
 }
 .aionic-card li {
     line-height: 1.5;
 }
+
 /* .aionic-card:hover {
     transform: scale(1.1);
 } */

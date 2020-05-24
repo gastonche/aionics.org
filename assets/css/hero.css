@@ -16,7 +16,7 @@
 .hero-cta {
     margin-top: auto;
     text-align: center;
-    padding: 20px;
+    padding: 20px 0;
 }
 .particles-js-canvas-el {
 	max-height: 60vh;

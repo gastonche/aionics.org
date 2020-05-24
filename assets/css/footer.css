@@ -1,16 +1,18 @@
 /* FOOTER STYLES */
 
 #footer {
-    position: absolute;
-    text-align: center;
-    padding: 15px;
-    width: 100%;
+	position: absolute;
+	text-align: center;
+	/* padding: 15px; */
+	width: 100%;
+	background-color: #159393;
+	color: white;
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 25px 0;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px 0;
 }
 
 .footer-content a {
