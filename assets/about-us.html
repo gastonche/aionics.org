@@ -1,0 +1,36 @@
+--- 
+layout: page 
+title: About Us 
+desc: Meet our team, Lorem ipsum dolor sit amet, consectetur adipisicing elit
+permalink: /about-us.html/ 
+---
+
+<section class="about-info pt-100">
+    <div class="container">
+        <div class="about-info-text">
+            <h2>We are Awesome people</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi tempora veritatis nemo aut ea iusto eos est expedita,quas ab adipisci. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque
+                sed ipsum.</p>
+            <a href="#" class="btn">Read More</a>
+            <div class="info-img">
+                <!-- <img src="{{site.baseurl}}/assets/img/about/our-team.jpg" class="img-fluid" alt=""> -->
+            </div>
+        </div>
+        <div class="team-members">
+            {% for member in site.data.team_members %} 
+            <div class="team-member">
+                <div class="team-member-img">
+                    <img src="{{member.image}}" alt="{{member.name}}">
+                </div>
+                <div class="team-member-info">
+                    <h3 class="member-name">{{member.name}}</h3>
+                    <p class="member-role">{{member.role}}</p>
+                    <p class="member-field">{{member.field}}</p>
+                </div>
+            </div>
+            {% endfor %}
+
+            
+        </div>
+    </div>
+</section>

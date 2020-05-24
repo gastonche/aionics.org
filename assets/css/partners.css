@@ -1,0 +1,7 @@
+.single-clients {
+	text-align: center;
+}
+.owl-carousel .owl-item .single-clients  img {
+	display: inline-block;
+	width: inherit;
+}

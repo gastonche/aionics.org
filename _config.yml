@@ -24,6 +24,8 @@ github_username:  jekyll
 logo: "/assets/img/logo/AIONICS_b_Logo.png"
 logo_2: "/assets/img/logo/AIONICS_b_Logo.png"
 
+permalink: "/:title"
+
 # Build settings
 markdown: kramdown
 theme: minima

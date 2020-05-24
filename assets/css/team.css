@@ -1,0 +1,28 @@
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-self: start;
+}
+
+.team-member img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.team-member {
+	flex: 0 0 23.43%;
+	width: 22%;
+	margin: 25px 20px 0 0;
+    box-shadow: 0px 0px 10px 0px rgba(2, 2, 2, 0.23);
+    border-radius: 3px;
+}
+
+.team-member-info {
+    padding: 20px;
+}
+.team-member .member-name {
+	display: inline;
+}
+.team-member .member-field {
+	font-size: 14px;
+}
