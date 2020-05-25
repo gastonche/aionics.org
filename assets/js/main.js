@@ -1,34 +1,34 @@
 // Header JS
-(function($) {
-    $(function() {
-      $('nav ul li > a:not(:only-child)').click(function(e) {
-        $(this).siblings('.nav-dropdown').toggle();
-        $('.nav-dropdown').not($(this).siblings()).hide();
-        e.stopPropagation();
-      });
-      $('html').click(function() {
-        $('.nav-dropdown').hide();
-      });
-      $('#nav-toggle').on('click', function() {
-        this.classList.toggle('active');
-      });
-      $('#nav-toggle').click(function() {
-    $('nav ul').toggle();
-  });
+(function ($) {
+    $(function () {
+        $('nav ul li > a:not(:only-child)').click(function (e) {
+            $(this).siblings('.nav-dropdown').toggle();
+            $('.nav-dropdown').not($(this).siblings()).hide();
+            e.stopPropagation();
+        });
+        $('html').click(function () {
+            $('.nav-dropdown').hide();
+        });
+        $('#nav-toggle').on('click', function () {
+            this.classList.toggle('active');
+        });
+        $('#nav-toggle').click(function () {
+            $('nav ul').toggle();
+        });
     });
-  })(jQuery);
-  window.onscroll = function() {myFunction()};
+})(jQuery);
+window.onscroll = function () { myFunction() };
 
-  var header = document.getElementById("header");
-  var sticky = header.offsetTop;
-  
-  function myFunction() {
+var header = document.getElementById("header");
+var sticky = header.offsetTop;
+
+function myFunction() {
     if (window.pageYOffset > sticky) {
-      header.classList.add("sticky");
+        header.classList.add("sticky");
     } else {
-      header.classList.remove("sticky");
+        header.classList.remove("sticky");
     }
-  }
+}
 
 // Partners JS
 $(document).ready(function () {
@@ -220,5 +220,3 @@ var scatterChart = new Chart(ctx_02, {
     },
     options: myoptions
 });
-
-
