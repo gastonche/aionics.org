@@ -36,6 +36,21 @@ $(document).ready(function () {
         }
     });
 
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.display === "block") {
+                panel.style.display = "none";
+            } else {
+                panel.style.display = "block";
+            }
+        });
+    }
+
 });
 
 $(function () { // wait for document ready
@@ -61,6 +76,7 @@ $(function () { // wait for document ready
 });
 
 let ctx = document.getElementById('myChart').getContext('2d');
+let ctx_02 = document.getElementById('myChart_02').getContext('2d');
 let ctx_2 = document.getElementById('myChart_2').getContext('2d');
 Chart.defaults.global.elements.point.backgroundColor = '#159393';
 Chart.defaults.global.elements.point.radius = '8';
@@ -133,6 +149,32 @@ var scatterChart = new Chart(ctx, {
     options: myoptions
 });
 var scatterChart = new Chart(ctx_2, {
+    plugins: [ChartDataLabels],
+    type: 'scatter',
+    data: {
+        datasets: [{
+            label: 'DefaultLabel',
+            backgroundColor: 'teal',
+            borderColor: '#000',
+            fill: false,
+            data: [{
+                x: 0.22,
+                y: -1.778,
+                label: 'Ph.D Students',
+                title: "test",
+            }, {
+                x: 0.5,
+                y: 3,
+                label: 'Logistic regression trained on 40 examples',
+                title: "test",
+            }],
+            pointRadius: 5,
+            pointBorderWidth: 2,
+        }],
+    },
+    options: myoptions
+});
+var scatterChart = new Chart(ctx_02, {
     plugins: [ChartDataLabels],
     type: 'scatter',
     data: {

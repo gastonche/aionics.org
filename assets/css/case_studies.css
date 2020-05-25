@@ -1,0 +1,8 @@
+.case-study {
+	display: flex;
+	justify-content: space-between;
+}
+.case-study-graph,
+.case-study-points {
+	width: 48.5%;
+}

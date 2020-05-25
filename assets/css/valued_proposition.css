@@ -1,0 +1,66 @@
+.vps {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+
+.vp {
+    width: 49%;
+    padding-bottom: 2%;
+}
+
+.accordion {
+    color: #222;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    /* transition: all linear 3s; */
+}
+
+.accordion {
+    background-color: #fff;
+    border-bottom-width: 0;
+    color: #000;
+    font-size: 16px;
+    border: 1px solid rgba(7, 61, 190, .3);
+    border-radius: 0;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.vp .active:after {
+    content: "\2212";
+}
+
+.vp-body {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.vp .accordion.active~.vp-body {
+    height: 120px;
+    overflow: hidden;
+    background-color: rgba(21, 147, 147, 0.05);
+    padding: 25px;
+}
+
+.v-head-s {
+    padding: 15px 0;
+}
+.v-head-s {
+    font-size: 18px;
+    text-align: center;
+}
