@@ -1,0 +1,26 @@
+<section id="quotes">
+    <span class="top-line"></span>
+    <div class="container">
+        <div class="testimonials owl-carousel quote-owl-carousel">
+            
+            {% for testimonial in site.data.testimonials %} 
+             <div class="item">
+                <div class="client-area">
+                    <div class="img testimonial-header">
+                        <span class="icon left-icon"><img src="{{site.baseurl}}/assets/img/left-quote.svg" alt=""></span>
+                        <div class="author">
+                            <img src="{{testimonial.image}}" alt="{{testimonial.name}}">
+                        </div>
+                        <span class="icon right-icon"><img src="{{site.baseurl}}/assets/img/right-quote.svg" alt=""></span>
+                    </div>
+                    <h4>{{testimonial.name}} </h4>
+                    <span>{{testimonial.role}}</span>
+                </div>
+                <p>{{testimonial.text}} </p>
+             </div>
+            {% endfor %}
+            
+        </div>
+    </div>
+    <span class="bottom-line"></span>
+</section>

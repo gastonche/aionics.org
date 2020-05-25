@@ -1,5 +1,5 @@
-$(document).ready(function() {
-    $(".owl-carousel").owlCarousel({
+$(document).ready(function () {
+    $(".partners-carousel").owlCarousel({
         loop: true,
         nav: false,
         autoplay: true,
@@ -24,8 +24,41 @@ $(document).ready(function() {
             }
         }
     });
-    
-  });
+    $('.quote-owl-carousel').owlCarousel({
+        autoplay: true,
+        navigation: true,
+        transitionStyle: "fade",
+        animateOut: 'fadeOut',
+        responsive: {
+            1000: {
+                items: 1
+            }
+        }
+    });
+
+});
+
+$(function () { // wait for document ready
+    // init
+    var controller = new ScrollMagic.Controller();
+
+    // define movement of panels
+    var wipeAnimation = new TimelineMax()
+        .fromTo("section.panel.turqoise", 1, { x: "-100%" }, { x: "0%", ease: Linear.easeNone })  // in from left
+        .fromTo("section.panel.green", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })  // in from right
+        .fromTo("section.panel.bordeaux", 1, { y: "-100%" }, { y: "0%", ease: Linear.easeNone }); // in from top
+
+    // create scene to pin and link animation
+    new ScrollMagic.Scene({
+        triggerElement: "#pinContainer",
+        triggerHook: "onLeave",
+        duration: "300%"
+    })
+        .setPin("#pinContainer")
+        .setTween(wipeAnimation)
+        .addIndicators() // add indicators (requires plugin)
+        .addTo(controller);
+});
 
 let ctx = document.getElementById('myChart').getContext('2d');
 let ctx_2 = document.getElementById('myChart_2').getContext('2d');

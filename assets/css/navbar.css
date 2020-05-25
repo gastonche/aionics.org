@@ -91,4 +91,14 @@
       color: rgba(255, 255, 255, 1);
     }
   }
-  
+  /* FFFFF */
+  #pinContainer {
+		/* width: 100%; */
+		height: 100%;
+		overflow: hidden;
+	}
+	.panel {
+		height: 100%;
+		/* width: 100%; */
+		position: absolute;
+	}

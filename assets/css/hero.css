@@ -5,6 +5,7 @@
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 15%;
+	padding: 40px 0;
 }
 
 .hero-content {
@@ -14,10 +15,11 @@
 
 .hero-cta {
     margin-top: auto;
-    text-align: center;
-    padding: 20px 0;
+	text-align: center;
+	font-size: 30px;
+	padding: 0;
 }
 .particles-js-canvas-el {
-	max-height: 60vh;
+	max-height: 45vh;
 	object-fit: cover;
 }
