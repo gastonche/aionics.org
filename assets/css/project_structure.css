@@ -20,13 +20,12 @@
 .phases {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .phases .phase {
     text-align: center;
     padding: 0;
-    width: 48.6%;
+    width: 100%;
     margin: 26px 10px 0 0;
 }
 
@@ -69,26 +68,29 @@
     padding: 10px 30px;
     border: solid 1px rgba(21, 147, 147, 0.05);
 }
+
 .phase-content p {
-	text-transform: capitalize;
+    text-transform: capitalize;
 }
 
 .phase-graphic {
     margin: 20px 0;
 }
-.svg-inline--fa.fa-plus{
+
+.svg-inline--fa.fa-plus {
     margin: 15px 0;
 }
-.p-head-s{
+
+.p-head-s {
     padding: 15px 0;
 }
-.p-head-s p{
+
+.p-head-s p {
     text-align: center;
     font-size: 18px;
 }
 
-
-@media screen and ( max-width: 480px ){
+@media screen and ( max-width: 480px) {
     #project-structure {
         padding: 20px;
     }

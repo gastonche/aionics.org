@@ -38,7 +38,7 @@
 }
 .desktop {
     margin-bottom: 11%;
-    border-radius: 1vw;
+    border-radius: 0.5vw;
     padding: 1.5%;
 }
 .phone::after {

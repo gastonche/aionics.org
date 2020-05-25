@@ -16,7 +16,6 @@ figcaption {
 .screenshots {
 	display: flex;
     justify-content: center;
-    padding: 50px 0 0 0;
 }
 /* .screenshots .screenshot {
     width: 49.2%;
