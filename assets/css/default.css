@@ -38,7 +38,7 @@ h1 {
 
 section h1 {
     text-align: center;
-    padding: 20px 0;
+    padding: 15px 0 50px;
     font-weight: 300;
     font-size: 40px;
 }
@@ -70,6 +70,20 @@ section h1 {
 	text-align: center;
 	color: #fff;
 	font-size: 18px;
+}
+
+
+.device figcaption {
+	display: block;
+	position: absolute;
+	top: 85%;
+	left: 25%;
+}
+.device figure {
+	height: 380px;
+	display: flex;
+    align-items: center;
+    margin: 10px;
 }
 
 @media screen and ( max-width: 480px ){
