@@ -15,12 +15,17 @@ figcaption {
 }
 .screenshots {
 	display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 50px 0 0 0;
 }
-.screenshots .screenshot {
+/* .screenshots .screenshot {
     width: 49.2%;
 
+} */
+
+.screenshots .screenshot {
+    width: 20%;
+    margin: 15px;
 }
 .screenshots .screenshot figure{
     margin-bottom: 10px;
@@ -28,6 +33,12 @@ figcaption {
 .screenshots .screenshot img{
     width: 100%;
     object-fit: contain;
+}
+.screenshots .screenshot:last-child {
+	width: 50%;
+}
+.screenshots .screenshot:first-child {
+	width: 50%;
 }
 
 @media screen and ( max-width: 480px ){
