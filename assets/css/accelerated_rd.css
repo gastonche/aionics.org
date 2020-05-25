@@ -29,3 +29,17 @@ figcaption {
     width: 100%;
     object-fit: contain;
 }
+
+@media screen and ( max-width: 480px ){
+    #accelerated_rd {
+        padding: 20px;
+        width: 100%;
+    }
+	.main-graphics {
+        display: block;
+    }
+    .main-graphics .graph {
+        width: 100%;
+    }
+
+}

@@ -1,3 +1,36 @@
+// Header JS
+(function($) {
+    $(function() {
+      $('nav ul li > a:not(:only-child)').click(function(e) {
+        $(this).siblings('.nav-dropdown').toggle();
+        $('.nav-dropdown').not($(this).siblings()).hide();
+        e.stopPropagation();
+      });
+      $('html').click(function() {
+        $('.nav-dropdown').hide();
+      });
+      $('#nav-toggle').on('click', function() {
+        this.classList.toggle('active');
+      });
+      $('#nav-toggle').click(function() {
+    $('nav ul').toggle();
+  });
+    });
+  })(jQuery);
+  window.onscroll = function() {myFunction()};
+
+  var header = document.getElementById("header");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+
+// Partners JS
 $(document).ready(function () {
     $(".partners-carousel").owlCarousel({
         loop: true,
@@ -30,6 +63,15 @@ $(document).ready(function () {
         transitionStyle: "fade",
         animateOut: 'fadeOut',
         responsive: {
+            0: {
+                items: 1
+            },
+            320: {
+                items: 1
+            },
+            480: {
+                items: 1
+            },
             1000: {
                 items: 1
             }
@@ -51,28 +93,6 @@ $(document).ready(function () {
         });
     }
 
-});
-
-$(function () { // wait for document ready
-    // init
-    var controller = new ScrollMagic.Controller();
-
-    // define movement of panels
-    var wipeAnimation = new TimelineMax()
-        .fromTo("section.panel.turqoise", 1, { x: "-100%" }, { x: "0%", ease: Linear.easeNone })  // in from left
-        .fromTo("section.panel.green", 1, { x: "100%" }, { x: "0%", ease: Linear.easeNone })  // in from right
-        .fromTo("section.panel.bordeaux", 1, { y: "-100%" }, { y: "0%", ease: Linear.easeNone }); // in from top
-
-    // create scene to pin and link animation
-    new ScrollMagic.Scene({
-        triggerElement: "#pinContainer",
-        triggerHook: "onLeave",
-        duration: "300%"
-    })
-        .setPin("#pinContainer")
-        .setTween(wipeAnimation)
-        .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
 });
 
 let ctx = document.getElementById('myChart').getContext('2d');
@@ -200,4 +220,5 @@ var scatterChart = new Chart(ctx_02, {
     },
     options: myoptions
 });
+
 

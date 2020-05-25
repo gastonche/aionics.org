@@ -23,3 +23,17 @@
 	max-height: 45vh;
 	object-fit: cover;
 }
+
+@media screen and ( max-width: 480px ){
+	.particles-js-canvas-el {
+		max-height: 60vh;
+	}
+	#hero {
+		background-position: center 30%;
+		background-size: 25%;
+	}
+	.hero-cta {
+		font-size: 24px;
+		padding: 0 20px;
+	}
+}

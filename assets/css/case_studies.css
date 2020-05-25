@@ -6,3 +6,14 @@
 .case-study-points {
 	width: 48.5%;
 }
+
+
+@media screen and ( max-width: 480px ){
+    .case-study {
+		display: block;
+	}
+	.case-study-graph, .case-study-points {
+		width: 90%;
+		padding: 20px;
+	}
+}

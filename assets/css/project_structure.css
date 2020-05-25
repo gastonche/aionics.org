@@ -83,3 +83,20 @@
     text-align: center;
     font-size: 18px;
 }
+
+
+@media screen and ( max-width: 480px ){
+    #project-structure {
+        padding: 20px;
+    }
+    .phases {
+        display: inline-block;
+        width: 100%;
+    }
+    .phases .phase {
+        width: 100%;
+    }
+    .phase-graphic {
+        margin: 10px 0;
+    }
+}

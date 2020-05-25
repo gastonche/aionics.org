@@ -60,7 +60,18 @@
 .v-head-s {
     padding: 15px 0;
 }
+
 .v-head-s {
     font-size: 18px;
     text-align: center;
+}
+
+@media screen and ( max-width: 480px) {
+    .vps {
+        display: inline-block;
+    }
+    .vp {
+        width: 100%;
+        padding: 10px 20px;
+    }
 }

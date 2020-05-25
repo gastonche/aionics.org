@@ -71,6 +71,15 @@
     -webkit-animation: cta-arrowdown-line 3s infinite ease-out 0ms backwards;
     animation: cta-arrowdown-line 3s infinite ease-out 0ms backwards;
 }
-.bottom-line{
 
+@media screen and ( max-width: 480px ){
+	.testimonials .right-icon {
+        right: 25%;
+    }
+    .testimonials .left-icon {
+        left: 25%;
+    }
+    .testimonials .item {
+        width: 90%;
+    }
 }
