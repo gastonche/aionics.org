@@ -1,0 +1,19 @@
+#data {
+	background-color: rgb(251, 250, 250);
+}
+.ep-driver{
+    display: flex;
+}
+.ep-driver-graph {
+	width: 70%;
+}
+.ep-driver-points ul li {
+	line-height: 1.2;
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+.ep-driver-points {
+	display: flex;
+	align-items: center;
+	padding: 0 30px;
+}

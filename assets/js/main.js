@@ -97,9 +97,9 @@ $(document).ready(function () {
 
 let ctx = document.getElementById('myChart').getContext('2d');
 let ctx_02 = document.getElementById('myChart_02').getContext('2d');
-let ctx_2 = document.getElementById('myChart_2').getContext('2d');
-Chart.defaults.global.elements.point.backgroundColor = '#159393';
-Chart.defaults.global.elements.point.radius = '8';
+let ep_driver = document.getElementById('ep-driver-chart').getContext('2d');
+
+// Chart.defaults.global.elements.point.pointStyle = "cross";
 
 const myoptions = {
     scales: {
@@ -130,37 +130,33 @@ const myoptions = {
     },
     legend: {
         labels: {
-            // This more specific font property overrides the global property
-            fontColor: 'black',
-            fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
+             fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
             lineHeight: '2'
         },
         display: false,
-        label: {
-            paddingTop: '40px',
+        title: {
+            display: true,
+            text: 'Only 40 data points = 3x improvement!'
         }
     }
 };
 
+// Graph 1
 var scatterChart = new Chart(ctx, {
     plugins: [ChartDataLabels],
     type: 'scatter',
     data: {
         datasets: [{
-            label: 'DefaultLabel',
             backgroundColor: 'teal',
-            borderColor: '#000',
-            fill: false,
             data: [{
                 x: 0.22,
                 y: -1.778,
                 label: 'Ph.D Students',
-                title: "test",
+                lineHeight: 2
             }, {
                 x: 0.5,
                 y: 3,
                 label: 'Logistic regression trained on 40 examples',
-                title: "test",
             }],
             pointRadius: 5,
             pointBorderWidth: 2,
@@ -168,25 +164,27 @@ var scatterChart = new Chart(ctx, {
     },
     options: myoptions
 });
-var scatterChart = new Chart(ctx_2, {
+
+// Graph 2
+var scatterChart2 = new Chart(ctx_02, {
     plugins: [ChartDataLabels],
     type: 'scatter',
+    padding: 23,
     data: {
         datasets: [{
-            label: 'DefaultLabel',
             backgroundColor: 'teal',
-            borderColor: '#000',
+            lineHeight: 2,
             fill: false,
             data: [{
                 x: 0.22,
                 y: -1.778,
                 label: 'Ph.D Students',
-                title: "test",
+                indexLabelPlacement: "inside",
             }, {
                 x: 0.5,
                 y: 3,
                 label: 'Logistic regression trained on 40 examples',
-                title: "test",
+                
             }],
             pointRadius: 5,
             pointBorderWidth: 2,
@@ -194,29 +192,39 @@ var scatterChart = new Chart(ctx_2, {
     },
     options: myoptions
 });
-var scatterChart = new Chart(ctx_02, {
-    plugins: [ChartDataLabels],
-    type: 'scatter',
+
+// Electrolyte Performance Drivers chart
+var barChart = new Chart(ep_driver, {
+    type: 'bar',
     data: {
+        labels: [
+            'Electrolyte: Model Sixe',
+            'Electrolyte: Polarity',
+            'Cathode Particle Size', 
+            'Cathode Sintering temperature',
+            'Separator thickness', 
+        ],
         datasets: [{
-            label: 'DefaultLabel',
-            backgroundColor: 'teal',
-            borderColor: '#000',
-            fill: false,
-            data: [{
-                x: 0.22,
-                y: -1.778,
-                label: 'Ph.D Students',
-                title: "test",
-            }, {
-                x: 0.5,
-                y: 3,
-                label: 'Logistic regression trained on 40 examples',
-                title: "test",
-            }],
-            pointRadius: 5,
-            pointBorderWidth: 2,
-        }],
+            label: 'Dataset 1',
+            borderWidth: 1,
+            data: [
+                [0, -0.4],
+                [0, 1.5],
+                [0, 0.25],
+                [0, 0.03],
+                [0, -0.5],
+            ]
+        }]
     },
-    options: myoptions
+    options: {
+        responsive: true,
+        legend: {
+            position: 'top',
+            display: false
+        },
+        title: {
+            display: true,
+            text: 'Electrolyte Performance Drivers'
+        }
+    }
 });

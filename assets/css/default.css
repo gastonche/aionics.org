@@ -85,6 +85,9 @@ section h1 {
     align-items: center;
     margin: 10px;
 }
+.device.desktop figure {
+    height: 480px;
+}
 
 @media screen and ( max-width: 480px ){
     section h1 {
