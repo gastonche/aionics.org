@@ -1,0 +1,33 @@
+--- 
+    layout: page
+    title: AIONIC'S Insights 
+    desc: All the latest news from the Electron team and community. 
+    permalink: /blog/ 
+---
+
+<section class="blog-page">
+    <div class="posts-container">
+
+        {% for post in site.posts %}
+        <ul class="no-style blog-posts">
+            <li class="blog-post">
+                <a href="{{ post.url }}" class="blog-index-link">
+                    {{ post.title }}
+                </a>
+                <div class="blog-byline">
+                    <span class="blog-index-time">{{ post.date }}</span>
+                    <a href="" class="author-link">
+                        <img src="{{ post.author_image }}" alt="{{ post.author }}">
+                        <span>{{ post.author }}</span>
+                    </a>
+                </div>
+                <div class="post-except">
+                    <p> {{ post.excerpt }} </p>
+                </div>
+                <a href="{{ post.url }}" class="read-more">Read More&nbsp;</a>
+            </li>
+        </ul>
+        {% endfor %}
+
+    </div>
+</section>

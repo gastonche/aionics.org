@@ -27,19 +27,19 @@ footer p {
     padding: 0 0 0 10px;
 }
 
-.social-links {
-    padding: 10px 0 0;
-}
-
 .social-links span {
-    font-size: 25px;
-    color: #fff;
-    border: none;
-    width: auto;
-    height: auto;
-    line-height: 1;
-    border-radius: 0;
-    background-color: transparent;
+	font-size: 20px;
+	color: #fff;
+	border-radius: 3px;
+	background-color: transparent;
+	border: solid 1px #fff;
+	width: 35px;
+	height: 35px;
+	padding: 5px;
+	display: inline-block;
+	text-align: center;
+	line-height: 1.2;
+	margin: 0 2px;
 }
 
 .social-links span:hover {
@@ -89,12 +89,15 @@ footer #footer-a {
 
 
 /* Footer 02 */
+
 #footer {
-	padding: 100px 0 0px;
+    padding: 120px 0 0px;
 }
-#footer .b-footer{
+
+#footer .b-footer {
+    padding: 5px 0;
     background: rgb(21, 147, 147);
-    background: radial-gradient(circle, rgba(21, 147, 147, 1) 5%, rgba(251, 250, 250, 1) 95%);
+    background: radial-gradient(circle, rgb(21, 147, 147) 50%, rgb(251, 250, 250) 100%);
 }
 
 .footer-content {
@@ -108,6 +111,17 @@ footer #footer-a {
 
 #footer .footer-logo {
     text-align: right;
+}
+.copy span,
+.f-links a {
+    color: #fff;
+}
+.bg-shade {
+    min-height: 0;
+    border: 1px solid #e0e5e6;
+    background: #f6f8f8;
+        background-image: none;
+    background-image: linear-gradient(#f6f6f6 0, #fff 325px);
 }
 
 @media screen and ( max-width: 480px) {

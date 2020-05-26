@@ -1,0 +1,31 @@
+---
+layout: default
+---
+
+{% include header.html %}
+<main> 
+<section class="single-post">
+    <div class="posts-container">
+            <h2 class="blog-index-link">{{ page.title }}</h2>
+            <div class="blog-byline">
+                <span class="blog-index-time">{{ page.date }}</span>
+                <a href="{{ page.author_link }}" class="author-link">
+                    <img src="{{ page.author_image }}" alt="{{ post.author }}">
+                    <span>{{ page.author }}</span>
+                </a>
+            </div>
+            <div class="post-featured-img">
+                <img src="{{page.featured_image}}" alt="{{page.title}}">
+            </div>
+            <div class="post-content">
+                {{content}}
+            </div>
+        
+        
+
+    </div>
+</section>
+
+
+
+</main>
