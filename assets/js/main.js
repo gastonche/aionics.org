@@ -119,7 +119,7 @@ $(document).ready(function () {
 });
 
 let ctx = document.getElementById('myChart').getContext('2d');
-let ctx_02 = document.getElementById('myChart_02').getContext('2d');
+// let ctx_02 = document.getElementById('myChart_02').getContext('2d');
 let ep_driver = document.getElementById('ep-driver-chart').getContext('2d');
 
 // Chart.defaults.global.elements.point.pointStyle = "cross";
@@ -188,33 +188,33 @@ var scatterChart = new Chart(ctx, {
     options: myoptions
 });
 
-// Graph 2
-var scatterChart2 = new Chart(ctx_02, {
-    plugins: [ChartDataLabels],
-    type: 'scatter',
-    padding: 23,
-    data: {
-        datasets: [{
-            backgroundColor: 'teal',
-            lineHeight: 2,
-            fill: false,
-            data: [{
-                x: 0.22,
-                y: -1.778,
-                label: 'Ph.D Students',
-                indexLabelPlacement: "inside",
-            }, {
-                x: 0.5,
-                y: 3,
-                label: 'Logistic regression trained on 40 examples',
+// // Graph 2
+// var scatterChart2 = new Chart(ctx_02, {
+//     plugins: [ChartDataLabels],
+//     type: 'scatter',
+//     padding: 23,
+//     data: {
+//         datasets: [{
+//             backgroundColor: 'teal',
+//             lineHeight: 2,
+//             fill: false,
+//             data: [{
+//                 x: 0.22,
+//                 y: -1.778,
+//                 label: 'Ph.D Students',
+//                 indexLabelPlacement: "inside",
+//             }, {
+//                 x: 0.5,
+//                 y: 3,
+//                 label: 'Logistic regression trained on 40 examples',
                 
-            }],
-            pointRadius: 5,
-            pointBorderWidth: 2,
-        }],
-    },
-    options: myoptions
-});
+//             }],
+//             pointRadius: 5,
+//             pointBorderWidth: 2,
+//         }],
+//     },
+//     options: myoptions
+// });
 
 // Electrolyte Performance Drivers chart
 var barChart = new Chart(ep_driver, {

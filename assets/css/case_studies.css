@@ -5,9 +5,12 @@
 	display: flex;
 	justify-content: space-between;
 }
-.case-study-graph,
+/* .case-study-graph,
 .case-study-points {
 	width: 48.5%;
+} */
+.case-study-graph {
+	width: 55%;
 }
 .case-study-points {
 	display: flex;
@@ -25,6 +28,11 @@
 .case-study-points ul li::marker{
 	color: #159393;
 }
+.case-study-points p {
+	font-size: 20px;
+	padding: 0 25px;
+}
+
 @media screen and ( max-width: 480px ){
     .case-study {
 		display: block;
