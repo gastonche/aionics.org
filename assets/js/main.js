@@ -38,10 +38,10 @@ $(document).ready(function () {
         autoplay: true,
         responsive: {
             0: {
-                items: 2
+                items: 3
             },
             320: {
-                items: 2
+                items: 3
             },
             480: {
                 items: 3
@@ -205,7 +205,6 @@ var barChart = new Chart(ep_driver, {
             'Separator thickness', 
         ],
         datasets: [{
-            label: 'Dataset 1',
             borderWidth: 1,
             data: [
                 [0, -0.4],
