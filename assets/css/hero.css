@@ -1,11 +1,17 @@
 #hero {
-	background-image: url(../img/AIONICS_fav.png);
+	background-image: url(../img/favicon.gif);
 	background-color: rgba(2, 156, 191, 0.03);
 	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 15%;
 	padding: 40px 0;
+	animation: mymove 5s infinite;
+    -webkit-animation-iteration-count: 1;
+}
+
+@keyframes mymove {
+  0% {background-position: center 3% ;}
 }
 
 .hero-content {
