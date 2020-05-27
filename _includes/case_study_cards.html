@@ -1,0 +1,24 @@
+<section id="case-study-cards">
+    <div class="container">
+        <h1>Case cards</h1>
+        <div class="content">
+            <div class="case-study-cards">
+                {% for case in site.case_studies %}
+                <div class="case-study-card">
+                    <a href="{{ case.url }}" class="case-study-card-image">
+                        <figure>
+                            <img src="{{ case.featured_image }}" alt="{{ case.title }}"/>
+                        </figure>
+                    </a>
+                    <div class="case-study-card-content">
+                        <p class="case-name">{{ case.title }}</p>
+                        <p class="case-except">{{ case.excerpt }}</p>
+                        <a href="{{ case.url }}" class="case-url">Learn more <span><i class="fas fa-arrow-circle-right"></i></span></a>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>

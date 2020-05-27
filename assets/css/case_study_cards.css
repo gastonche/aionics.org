@@ -1,0 +1,45 @@
+#case-study-cards {
+    background-color: #fbfafa;
+}
+
+.case-study-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.case-study-card {
+    height: 370px;
+	width: 32.3%;
+	margin-bottom: 2%;
+	align-self: center;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.10);
+	border-radius: 3px;
+}
+.case-study-card-image{
+    height: 200px; 
+}
+.case-study-card-image img {
+	height: 150px;
+	width: 100%;
+	object-fit: cover;
+}
+.case-study-card-content{
+    padding: 20px;
+}
+.case-study-card .case-name {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.case-study-card .case-except {
+    margin-bottom: 10px;
+}
+
+.case-study-card .case-url{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #159393;
+}

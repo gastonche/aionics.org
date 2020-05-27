@@ -26,6 +26,9 @@ logo_2: "/assets/img/logo/AIONICS_b_Logo.png"
 
 permalink: "/:title"
 
+collections:
+  - case_studies
+
 # Build settings
 markdown: kramdown
 theme: minima
