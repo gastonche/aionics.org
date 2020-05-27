@@ -4,6 +4,7 @@
 .case-study {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 /* .case-study-graph,
 .case-study-points {
@@ -13,9 +14,8 @@
 	width: 55%;
 }
 .case-study-points {
-	display: flex;
-	align-items: center;
-	padding: 0 30px;
+    padding: 0 30px;
+    width: 50%;
 }
 .case-study-points ul{
 	list-style: decimal-leading-zero;

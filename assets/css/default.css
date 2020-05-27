@@ -82,22 +82,28 @@ section h2 {
     text-align: center;
 }
 
-.device figcaption {
+/* .device figcaption {
     display: block;
     position: absolute;
     top: 85%;
     left: 25%;
-}
+} */
 
 .device figure {
     height: 380px;
     display: flex;
     align-items: center;
-    margin: 10px;
+    margin: 5px;
 }
 
 .device.desktop figure {
     height: 480px;
+}
+
+.device figure img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
 }
 
 @media screen and ( max-width: 480px) {
