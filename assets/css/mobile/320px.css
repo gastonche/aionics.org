@@ -1,0 +1,8 @@
+@media screen and (max-width: 320px) {
+    .testimonials .left-icon {
+        left: 60%;
+    }
+    .testimonials .right-icon {
+        left: 20%;
+    }
+}

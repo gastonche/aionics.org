@@ -160,3 +160,16 @@ footer #footer-a {
         background: radial-gradient(circle, rgb(21, 147, 147) 50%, rgb(21, 147, 147) 100%);
     }
 }
+
+@media screen and (max-width: 320px){
+    .footer-content .copy {
+        width: 50%;
+        line-height: 1.6;
+    }
+    .social-links span {
+        font-size: 13px;
+        width: 22px;
+        height: 22px;
+        padding: 4px;
+    }
+}
