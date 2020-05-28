@@ -32,7 +32,7 @@
                 <img src="./../assets/img/AIONICS_c_logo.png" alt="AIONICS Logo">
             </a>
         </div>
-        <nav>
+        <nav class="main-menu">
             <div class="nav-mobile">
                 <a id="nav-toggle" href="#!"><span></span></a>
             </div>
@@ -50,7 +50,7 @@
                     {% assign active = 'active' %}
                 {% endif %}
                  
-                 <li data = {{ page.url,link.url }} {% if page.url == link.url %} class="active" {% endif %} >
+                 <li data = {{ page.url,link.url }} class="{% if page.url == link.url %} active {% endif %} {% if link.submenu %}has-submenu{% endif %}" >
                      <a href="{{link.url}}">{{link.text}}{% if link.submenu %}<i class="icofont-simple-down"></i>{% endif %}</a>
                     {% if link.submenu %}
                     <ul class="sub-menu">

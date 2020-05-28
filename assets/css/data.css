@@ -26,3 +26,22 @@
 .laptop {
     border-radius: 0.7vw;
 }
+
+@media screen and (max-width: 480px){
+	.ep-driver {
+		flex-direction: column;
+	}
+	.ep-driver-graph {
+		width: 95%;
+		margin: 20px auto;
+	}
+	.ep-driver-points{
+		width: 100%;
+		display: block;
+	}
+	.ep-driver-points ul li {
+		font-size: 16px;
+		margin-bottom: 10px;
+		text-align: center;
+	}
+}

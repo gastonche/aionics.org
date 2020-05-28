@@ -64,4 +64,15 @@ figcaption {
     .main-graphics .graph {
         width: 100%;
     }
+    .screenshots {
+        flex-direction: column;
+    }
+    .screenshots .screenshot:first-child {
+        width: 108%;
+        margin: 0 -14px;
+    }
+    .screenshots .screenshot:last-child {
+        width: 50%;
+        margin: 30px auto;
+    }
 }

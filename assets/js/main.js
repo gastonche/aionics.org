@@ -13,8 +13,20 @@
             this.classList.toggle('active');
         });
         $('#nav-toggle').click(function () {
+            if ( $('nav ul').hasClass('aoinics-mobile') ){
+                $('nav ul').removeClass('aoinics-mobile');
+                $('nav ul').toggle();
+                $('nav ul').addClass('hide')
+            }
+            else{
+                $('nav ul').addClass('aoinics-mobile')
+                // $('.main-menu').addClass('blue-bg');
+            }
+            
+        });
+        $('.has-submenu a').on('click', function() {
+            console.log('show');
             $('nav ul').toggle();
-            $('nav .nav-list').addClass('aoinics-mobile')
         });
     });
 })(jQuery);

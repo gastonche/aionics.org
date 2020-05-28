@@ -81,6 +81,7 @@ nav ul li ul li a {
     z-index: 9999;
 }
 
+
 @media only screen and (max-width: 800px) {
     .nav-mobile {
         display: block;
@@ -176,6 +177,9 @@ nav ul li ul li a {
     line-height: 55px;
     text-transform: uppercase;
 }
+.main-menu {
+  overflow: hidden;
+}
 
 @media screen and (max-width: 480px) {
     nav {
@@ -184,7 +188,7 @@ nav ul li ul li a {
         border-bottom: solid 1px #138484;
     }
     nav .aoinics-mobile {
-        display: inline-flex;
+        display: inline-flex !important;
     }
     .nav-mobile {
         top: -10px;
@@ -195,5 +199,15 @@ nav ul li ul li a {
     .brand {
         padding-left: 10px;
         line-height: 55px;
+    }
+    .aoinics-mobile {
+      background-color: #fff;
+      color: #f7fcfd;
+    }
+    .aoinics-mobile li a{
+      background-color: #fff;
+    }
+    .sticky .main-menu{
+      background-color: #fff;
     }
 }

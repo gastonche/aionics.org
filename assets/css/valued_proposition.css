@@ -87,4 +87,7 @@
         width: 100%;
         padding: 10px 20px;
     }
+    .vp .accordion.active ~ .vp-body {
+        height: 100%;
+    }
 }

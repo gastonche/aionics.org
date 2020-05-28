@@ -92,7 +92,7 @@
 
 @media screen and ( max-width: 480px) {
     #project-structure {
-        padding: 20px;
+        padding: 70px 20px;
     }
     .phases {
         display: inline-block;
@@ -103,5 +103,8 @@
     }
     .phase-graphic {
         margin: 10px 0;
+    }
+    .p-head-s p {
+        font-size: 16px;
     }
 }
