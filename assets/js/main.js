@@ -41,7 +41,8 @@ function myFunction() {
 
 $(document).ready(function () {
     AOS.init({
-        useClassNames: false
+        useClassNames: false,
+        disable: ['phone', 'tablet', 'mobile']    
     });
 
     // Partners JS

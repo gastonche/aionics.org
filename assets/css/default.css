@@ -121,6 +121,16 @@ main {
     overflow: hidden;
 }
 
+.case-url {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #159393;
+    position: absolute;
+}
+.case-study  p{
+    margin-bottom: 20px;
+}
+
 @media screen and ( max-width: 480px) {
     section h1 {
         text-align: center;
@@ -149,7 +159,8 @@ main {
         line-height: 1.5 !important;
     }
 }
-@media screen and (min-width:480px) and (max-width: 800px){
+
+@media screen and (min-width:480px) and (max-width: 800px) {
     .device figure {
         height: 200px;
     }
@@ -172,13 +183,13 @@ main {
         min-height: 30vh !important;
     }
     .tablet.landscape {
-       width: 94%;
+        width: 94%;
         margin: 22px;
     }
-    #literature-example tablet.landscape{
+    #literature-example tablet.landscape {
         margin: 50px;
     }
-    section{
-            padding: 50px 0 !important;
+    section {
+        padding: 50px 0 !important;
     }
 }

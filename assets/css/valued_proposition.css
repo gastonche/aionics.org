@@ -91,3 +91,8 @@
         height: 100%;
     }
 }
+@media screen and ( min-width: 480px) and ( max-width: 800px) {
+    #valued_proposition {
+        padding: 50px 20px !important;
+    }
+}
