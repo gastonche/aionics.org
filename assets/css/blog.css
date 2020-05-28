@@ -81,3 +81,35 @@
 	padding: 30px 40px;
 	border-radius: 3px;
 }
+@media screen and (max-width:320px){
+    .blog-index-time, .author-link span {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width:320px) and (max-width: 800px){
+    .blog-page {
+        padding: 25px;
+    }
+    .blog-index-time, .author-link span {
+        font-size: 14px;
+        font-weight: 400;
+    }
+    .single-post {
+        padding: 25px;
+    }
+    .blog-index-link {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 1.2;
+    }
+    .single-post .author-link img {
+        width: 30px;
+    }
+    .single-post .post-content {
+        padding: 10px 20px 20px 20px;
+    }
+    .post-content img{
+        width: 100%;
+    }
+}

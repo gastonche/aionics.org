@@ -27,3 +27,23 @@
 .team-member .member-field {
 	font-size: 14px;
 }
+
+@media only screen and (max-width: 800px) {
+	.about-info {
+		padding: 25px;
+	}
+	.team-member {
+		flex: 0 0 31%;
+		width: 33%;
+		margin: 25px 16px 0 0;
+	}
+}
+@media only screen and (max-width: 480px){
+	.team-member {
+		flex: 0 0 100%;
+	}
+	section h2 {
+		font-size: 30px;
+		line-height: 1.1;
+	}
+}
