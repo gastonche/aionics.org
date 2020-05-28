@@ -23,6 +23,7 @@ twitter_username: jekyllrb
 github_username:  jekyll
 logo: "/assets/img/logo/AIONICS_b_Logo.png"
 logo_2: "/assets/img/logo/AIONICS_b_Logo.png"
+main_logo: "assets/img/AIONICS_c_logo.png"
 
 permalink: "/:title"
 

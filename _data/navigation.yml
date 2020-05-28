@@ -6,14 +6,5 @@
   url: /about-us/
 - text: Case Studies
   url: /#case-study/
-  submenu:
-    - text: Dr. Sendek’s Stanford PhD
-      url: /#dr-sendek
-    - text: Literature examples of excellence
-      url: /#literature-example
-    - text: Electrolyte formulation A
-      url: /#electrolyte-a
-    - text: lectrolyte formulation B
-      url: /#electrolyte-b
 - text: News
   url: /blog/
