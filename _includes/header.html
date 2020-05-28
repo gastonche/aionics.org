@@ -36,18 +36,33 @@
             <div class="nav-mobile">
                 <a id="nav-toggle" href="#!"><span></span></a>
             </div>
-            <ul class="nav-list">
-                <li><a href="/">Home</a></li>
-                <li><a href="/about-us">About</a></li>
-                <li><a href="#!">Case Studies</a>
-                    <ul class="nav-dropdown">
-                        <li><a href="#!">Web Design</a></li>
-                        <li><a href="#!">Web Development</a></li>
-                        <li><a href="#!">Graphic Design</a></li>
+            <ul>
+                {% for link in site.data.navigation %}
+                {% assign active = nil %}
+            
+                {% for sublink in link.submenu %}
+                    {% if page.url contains sublink.url %}
+                        {% assign active = 'active' %}
+                    {% endif %}
+                {% endfor %}
+            
+                {% if page.url contains link.url %}
+                    {% assign active = 'active' %}
+                {% endif %}
+                 
+                 <li data = {{ page.url,link.url }} {% if page.url == link.url %} class="active" {% endif %} >
+                     <a href="{{link.url}}">{{link.text}}{% if link.submenu %}<i class="icofont-simple-down"></i>{% endif %}</a>
+                    {% if link.submenu %}
+                    <ul class="sub-menu">
+                        {% for sublink in link.submenu %}
+                        <li><a href="{{sublink.url}}">{{sublink.text}}</a></li>
+                        {% endfor %}
                     </ul>
+                    {% endif %}
                 </li>
-                <li><a href="/blog/">News</a></li>
+                {% endfor %}
             </ul>
+            
         </nav>
 
     </div>

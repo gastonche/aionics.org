@@ -28,18 +28,18 @@ footer p {
 }
 
 .social-links span {
-	font-size: 20px;
-	color: #fff;
-	border-radius: 3px;
-	background-color: transparent;
-	border: solid 1px #fff;
-	width: 35px;
-	height: 35px;
-	padding: 5px;
-	display: inline-block;
-	text-align: center;
-	line-height: 1.2;
-	margin: 0 2px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 3px;
+    background-color: transparent;
+    border: solid 1px #fff;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    display: inline-block;
+    text-align: center;
+    line-height: 1.2;
+    margin: 0 2px;
 }
 
 .social-links span:hover {
@@ -112,19 +112,24 @@ footer #footer-a {
 #footer .footer-logo {
     text-align: right;
 }
+
 .copy span,
 .f-links a {
     color: #fff;
 }
+
 .bg-shade {
     min-height: 0;
     border: 1px solid #e0e5e6;
     background: #f6f8f8;
-        background-image: none;
+    background-image: none;
     background-image: linear-gradient(#f6f6f6 0, #fff 325px);
 }
 
 @media screen and ( max-width: 480px) {
+    #footer {
+        padding: 50px 0 0px;
+    }
     .footer-links-sections {
         display: inline-block;
         width: 100%;
@@ -134,5 +139,24 @@ footer #footer-a {
     }
     .f-newsletter {
         display: none;
+    }
+    .footer-content {
+        align-items: flex-start;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .footer-content .copy {
+        width: 43%;
+        line-height: 3.4;
+    }
+    .footer-content .social-links {
+        width: 50%;
+    }
+    .footer-content .f-links {
+        width: 100%;
+        margin-top: 30px;
+    }
+    #footer .b-footer {
+        background: radial-gradient(circle, rgb(21, 147, 147) 50%, rgb(21, 147, 147) 100%);
     }
 }

@@ -5,8 +5,9 @@
 }
 
 .team-member img {
-    width: 100%;
-    object-fit: contain;
+	width: 100%;
+	object-fit: cover;
+	height: 250px;
 }
 
 .team-member {
